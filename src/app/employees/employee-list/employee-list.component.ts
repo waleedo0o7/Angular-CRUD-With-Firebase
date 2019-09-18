@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from 'src/app/shared/employee.service';
-import { Employee } from 'src/app/shared/employee.model';
+import { EmployeeService } from '../../..//app/shared/employee.service';
+import { Employee } from '../../../app/shared/employee.model';
 import { Action } from 'rxjs/internal/scheduler/Action';
 import { firestore } from 'firebase';
 import { AngularFirestore } from '@angular/fire/firestore';
