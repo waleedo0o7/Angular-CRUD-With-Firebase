@@ -1,0 +1,40 @@
+<div class="test">
+
+  <!-- <div class="text">
+    <p style="text-align:center;"> Hello I Am employees Component :) </p> 
+  </div> -->
+
+  <div class="lists">
+    
+    <div class="list test-animation">
+
+      <div class="btns">
+        <h3 class="headline"> this is animated static list :</h3>
+        <div>
+          <a (click)="addItem()">Add To List</a>
+          <a (click)="removeItem()">Remove Latest Item</a>
+        </div>
+      </div>
+
+      <div>
+        <ul>
+          <li *ngFor="let list of listItem;" [@fadeInOut]>
+            <span> {{list.Name}}  <i class="fa fa-trash" (click)="removeThisItem(list.Id)"></i>  </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="list test-animation">
+      <employee-list></employee-list>
+    </div>
+
+    <div class="list test-animation">
+      <employee></employee>
+    </div>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,9 @@
+<div class="main-app">
+  <div><a routerLink="/employees" routerLinkActive="active"> CRUD using Firestore </a></div>
+  <div><a routerLink="/home" routerLinkActive="active"> Home </a></div>
+  <div><a routerLink="/test2" routerLinkActive="active">champions league Game </a></div>
+</div>
+
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

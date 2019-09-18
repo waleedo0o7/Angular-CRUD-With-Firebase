@@ -1,0 +1,57 @@
+<div class="dawra" >
+  <div class="teams">
+    <h3 class="test-animation"> teams </h3>
+    <div class="all-groups">
+      
+      <div class="one-group test-animation">
+        <h2> Pot 1 </h2>
+        <ul>
+          <li *ngFor="let team of teams.pot1">{{team}}</li>
+        </ul>
+      </div>
+
+      <div class="one-group test-animation">
+        <h2> Pot 2 </h2>
+        <ul>
+          <li *ngFor="let team of teams.pot2">{{team}}</li>
+        </ul>
+      </div>
+
+      <div class="one-group test-animation">
+        <h2> Pot 3 </h2>
+        <ul>
+          <li *ngFor="let team of teams.pot3">{{team}}</li>
+        </ul>
+      </div>
+
+      <div class="one-group test-animation">
+        <h2> Pot 4  </h2>
+        <ul>
+          <li *ngFor="let team of teams.pot4">{{team}}</li>
+        </ul>
+      </div>
+
+    </div> <!-- all-groups -->
+  </div>
+  <div class="expect">
+    <h3 class="test-animation"> Expectation </h3>
+    <div *ngIf="hidebtnvar" class="expectimage test-animation">
+      <div  (click)="getAllRandomGroups(); hidebtn()" class="expectimagecontant">
+        <img  class="img-fluid" src="../../assets/01.jpg" />
+        <p> Click Here To Expect Champions League Groups </p>
+      </div>
+    </div>
+
+    <div class="all-expected-groups">
+
+      <div class="one-expected-group" *ngFor="let group of bigArray; let in = index" [@fadeInOut]>
+        <h2> Group {{in + 1}} </h2>
+        <ul>
+          <li *ngFor="let team of group" > {{team}} </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>

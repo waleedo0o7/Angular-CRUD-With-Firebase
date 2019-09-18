@@ -1,0 +1,40 @@
+ [hidden] {
+  display: none !important;
+}
+
+.main-app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    width: 100vw;
+    height: auto;
+    background: #119a8d;
+    color: #FFF;
+    overflow: hidden;
+    div{
+        width: 33.33%;
+        text-align: center;
+    }
+    a{
+
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 61px;
+        width: auto;
+        padding: 20px;
+
+    }
+}
+
+

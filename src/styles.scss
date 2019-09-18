@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    min-height: 100vh;
+    background: #3CAEA3;
+}
+
+a , a:hover{
+    text-decoration: none !important;
+}
+
+a.active {
+    background: #0c6f66;
+}
+
+h4{
+    color: #fff;
+}
+
+h3.headline{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+    font-weight: bold !important;
+    margin-bottom: 30px !important;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+input.ng-touched.ng-invalid {
+    border-color: #dc3545;
+    background: #dc3545;
+}
+
+input.ng-touched.ng-invalid::placeholder {
+    color: #fff;
+}
+
+div.validation-error{
+    width: 100%;
+    font-size: 80%;
+    color: #dc3545;
+    text-transform: capitalize;
+}
+
+table.table-hover tbody tr:hover{
+    cursor: pointer;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #9a9a9a !important;
+    background-color: #424242!important;
+    border-color: #313131!important;
+    opacity: 0.4!important;
+}
