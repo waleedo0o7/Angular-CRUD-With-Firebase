@@ -10,8 +10,6 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./employee.component.scss']
 })
 export class EmployeeComponent implements OnInit {
-
-  // formData:Employee;
   
   constructor(private service: EmployeeService, private firestore: AngularFirestore, private toastr : ToastrService ){}
  
