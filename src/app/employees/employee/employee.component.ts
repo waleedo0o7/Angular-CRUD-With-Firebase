@@ -27,7 +27,6 @@ export class EmployeeComponent implements OnInit {
 
   onSubmit(form:NgForm){
     let data = Object.assign({}, form.value);
-    console.log(form.value);
     delete data.id;
     if(form.value.id == null)
       this.firestore.collection('employees').add(data);

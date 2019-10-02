@@ -52,7 +52,7 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     ToastrModule.forRoot()
   ],
-  providers: [EmployeeService],
+  providers: [AngularFireDatabaseModule, AngularFirestoreModule,EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

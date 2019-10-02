@@ -71,8 +71,6 @@ export class Test2Component implements OnInit {
 
         this.splicedTeams[1] = _.filter(this.splicedTeams[1], function (o) { return o != randomText; });
 
-        console.log(randomText);
-
       }
 
     }
@@ -110,7 +108,6 @@ export class Test2Component implements OnInit {
       }
 
     }
-    console.log(this.bigArray);
   }
 
   hidebtnvar: Boolean = true;
