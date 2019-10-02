@@ -23,7 +23,7 @@ trigger('fadeInOut', [
 
 export class EmployeesComponent implements OnInit {
 
-  @ViewChild('FirebaseInput') FirebaseInput: ElementRef;
+  @ViewChild('FirebaseInput', { static: false }) FirebaseInput: ElementRef;
 
 
   listItem = [{ Id: 1,Name: 'list 1'}, { Id: 2, Name: 'list 2' }];
